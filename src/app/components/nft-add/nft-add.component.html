@@ -1,0 +1,16 @@
+<p>nft-add works!</p>
+
+<form [formGroup]="nftAddForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Titre :</label>
+      <input type="text" id="name" formControlName="title">
+      <div *ngIf="nftAddForm.get('name').hasError('required') && nftAddForm.get('title').touched">
+        Ce champ est requis.
+      </div>
+    </div>
+
+  
+
+    <button type="submit" [disabled]="nftAddForm.invalid">Ajouter NFT</button>
+  </form>
+  

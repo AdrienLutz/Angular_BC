@@ -21,4 +21,6 @@ export class NftServiceService {
  getOne(id:number): Observable <Nft>{
   return this.http.get<Nft>(this.apiURL+'/'+id+".json");
  } 
+
+ 
 }

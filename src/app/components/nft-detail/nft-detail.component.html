@@ -5,7 +5,10 @@
 
 
 <div *ngIf="!isLoading">
-<h1>{{nft.name}}</h1>
-</div>
-
-<a [routerLink] = "['/nfts/']">Back</a>
+    <h1>{{nft?.name}}</h1>
+    <img src="{{nft?.image}}" alt="">
+    <ul>
+        <li>Date de sortie : {{nft?.releaseDate}} </li>
+        <li> Stock : {{nft?.stock}} </li>
+    </ul>
+    <a [routerLink]="['/nfts/']">Back</a>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Nft } from 'src/app/interfaces/nft';
 import { NftServiceService } from 'src/app/services/nft-service.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
 
