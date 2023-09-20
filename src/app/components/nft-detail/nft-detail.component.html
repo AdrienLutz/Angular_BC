@@ -1,0 +1,11 @@
+<p>nft-detail works!</p>
+
+
+<div *ngIf="isLoading">Chargement en cours ... </div>
+
+
+<div *ngIf="!isLoading">
+<h1>{{nft.name}}</h1>
+</div>
+
+<a [routerLink] = "['/nfts/']">Back</a>
